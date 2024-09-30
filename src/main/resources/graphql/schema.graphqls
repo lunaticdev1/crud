@@ -1,0 +1,20 @@
+type Person{
+    id: ID!
+    firstName: String
+    lastName: String
+    age: Int
+    social: String
+    car: Car
+
+}
+
+enum Car{
+    HONDA
+    TOYOTA
+    MAZDA
+}
+
+type Query {
+    findAll: [Person]
+    findById(id: ID): Person
+}
